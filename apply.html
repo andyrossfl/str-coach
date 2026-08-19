@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Apply for a Strategy Call | Elite STR Operational Coach - Strategists</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/apply.css" />
+	</head>
+	<body class="is-preload is-apply">
+
+		<!-- Header -->
+			<div id="header">
+				<a href="index.html" class="logo icon solid fa-shield-alt"><span class="label">Home</span></a>
+				<h1>Apply for a Strategy Call.</h1>
+				<p>Six questions. Then you pick the time.<br />
+				We use your answers to prepare — this is not a generic discovery chat.</p>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Step 1: Qualification -->
+					<div id="apply-form-panel" class="box container apply-panel">
+						<header>
+							<h2>Tell us where you stand.</h2>
+						</header>
+						<p class="apply-lede">This call is for high-income W-2 earners who want the STR loophole run operationally — licenses, material participation, and bonus depreciation — not theoretically. Required fields take about a minute.</p>
+
+						<form id="strategy-form" method="post" action="#">
+							<input type="hidden" name="_subject" value="New Strategy Call Application" />
+							<input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" />
+
+							<div class="row gtr-uniform">
+								<div class="col-6 col-12-mobilep">
+									<label for="name">Full Name *</label>
+									<input class="text" type="text" name="name" id="name" autocomplete="name" required />
+								</div>
+								<div class="col-6 col-12-mobilep">
+									<label for="email">Email *</label>
+									<input class="text" type="email" name="email" id="email" autocomplete="email" required />
+								</div>
+								<div class="col-12">
+									<label for="phone">Mobile Phone *</label>
+									<input class="text" type="text" name="phone" id="phone" inputmode="tel" autocomplete="tel" required />
+								</div>
+								<div class="col-12">
+									<label for="income">W-2 / Household Income *</label>
+									<select name="income" id="income" required>
+										<option value="" disabled selected>Select one</option>
+										<option value="Under $250k">Under $250k</option>
+										<option value="$250k – $400k">$250k – $400k</option>
+										<option value="$400k – $750k">$400k – $750k</option>
+										<option value="$750k – $1.5M">$750k – $1.5M</option>
+										<option value="$1.5M+">$1.5M+</option>
+									</select>
+								</div>
+								<div class="col-12">
+									<label for="landlord">Currently a Landlord? *</label>
+									<select name="landlord" id="landlord" required>
+										<option value="" disabled selected>Select one</option>
+										<option value="Yes">Yes</option>
+										<option value="No">No</option>
+									</select>
+								</div>
+								<div class="col-12">
+									<label for="real_estate">Real Estate Status *</label>
+									<select name="real_estate" id="real_estate" required>
+										<option value="" disabled selected>Select one</option>
+										<option value="No property yet — looking to acquire">No property yet — looking to acquire</option>
+										<option value="Under contract">Under contract</option>
+										<option value="I already own a short-term rental">I already own a short-term rental</option>
+										<option value="I own a long-term rental I want to convert">I own a long-term rental I want to convert</option>
+									</select>
+								</div>
+								<div class="col-12">
+									<label for="offer">What do you want help with? *</label>
+									<select name="offer" id="offer" required>
+										<option value="" disabled selected>Select one</option>
+										<option value="Advisory &amp; Strategy (DIY)">Advisory &amp; Strategy (DIY)</option>
+										<option value="The Turnkey Shield (DFY)">The Turnkey Shield (DFY)</option>
+										<option value="Not sure — I need a recommendation">Not sure — I need a recommendation</option>
+									</select>
+								</div>
+								<div class="col-6 col-12-mobilep">
+									<label for="home_state">State You Live In</label>
+									<input class="text" type="text" name="home_state" id="home_state" autocomplete="address-level1" placeholder="Optional" />
+								</div>
+								<div class="col-6 col-12-mobilep">
+									<label for="property_state">Property State</label>
+									<input class="text" type="text" name="property_state" id="property_state" placeholder="Optional — or planned" />
+								</div>
+								<div class="col-12">
+									<label for="tax_bill">Approximate Federal Tax Bill (Last Year)</label>
+									<select name="tax_bill" id="tax_bill">
+										<option value="" selected>Optional — select one</option>
+										<option value="Under $50k">Under $50k</option>
+										<option value="$50k – $100k">$50k – $100k</option>
+										<option value="$100k – $250k">$100k – $250k</option>
+										<option value="$250k+">$250k+</option>
+									</select>
+								</div>
+								<div class="col-12">
+									<label for="notes">Anything else we should cover?</label>
+									<textarea name="notes" id="notes" rows="4" placeholder="Optional"></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions special">
+										<li><input type="submit" value="Submit Application" /></li>
+									</ul>
+									<p class="apply-privacy">Your answers stay with us. We use them to prepare your call — nothing else.</p>
+								</div>
+							</div>
+						</form>
+					</div>
+
+				<!-- Step 2: Calendar -->
+					<div id="apply-calendar-panel" class="box container apply-panel" hidden>
+						<header>
+							<h2>You're in. Pick a time.</h2>
+						</header>
+						<p id="calendar-ready" class="apply-lede">We'll use your answers to prepare the call. Choose a 30-minute slot below.</p>
+						<p id="calendar-fallback" class="apply-lede" hidden>Application received. Watch your inbox — we'll send a booking link within one business day.</p>
+						<div id="calendly-embed"></div>
+						<ul class="actions special">
+							<li><a href="index.html" class="button alt">Back to Home</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				<div class="container medium">
+					<ul class="copyright">
+						<li>&copy; Elite STR Operational Coach - Strategists. All rights reserved.</li>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/apply.js"></script>
+
+	</body>
+</html>
